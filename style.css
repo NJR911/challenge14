@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(216, 12%, 8%);
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.main-countainer, 
+.thank-you{
+    background: hsl(213, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+    padding: 1.5rem;
+    border-radius: 20px;
+    max-width: 370px;
+    margin: 0 auto;
+}
+.main-countainer img{
+    background-color: hsl(214, 12%, 27%);
+    padding: .7rem;
+    border-radius: 50%;
+}
+h1{
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    margin: 2rem 0 .7rem;
+}
+p{
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.main-countainer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1.8rem;
+}
+ul{
+    list-style-type: none;
+}
+.main-countainer ul li button{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    border: 0;
+    background-color: hsl(214, 12%, 27%);
+    color: white;
+    padding-top: .2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.main-countainer ul li button:hover{
+    background: hsl(25, 97%, 53%);
+}
+.main-countainer ul li button:focus{
+    background-color: hsl(217, 12%, 63%);
+}
+button{
+    font-family: inherit;
+}
+.btn-submit{
+    width: 100%;
+    background: hsl(25, 97%, 53%);
+    border: none;
+    padding: .8rem 0 .55rem;
+    border-radius: 50px;
+    color: white;
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-submit:hover{
+    background: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.thank-you{
+    text-align: center;
+    
+}
+.thank-you img{
+    margin: 0 auto 2rem;
+}
+.thank-you p.select{
+    background-color: hsl(213, 23%, 23%);
+    border-radius: 30px;
+    color: hsl(25, 97%, 53%);
+    width: 200px;
+    margin: auto;
+    margin-bottom: 2rem;
+    padding: 0.25rem 0 0 ;
+    font-size: .9rem;
+}
+.thank-you h2{
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.hide{
+    display: none;
+}
+#one,
+#two,
+#three,
+#four,
+#five{
+    text-align: center;
+    font-size: 1rem;
+    color: hsl(25, 97%, 53%);
+    margin-top: -1.4rem;
+}
+
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 1rem;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

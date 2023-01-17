@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link hre="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <div class="main-countainer">
+    <img src="./images/icon-star.svg" alt="logo">
+    <h1>How did we do?</h1>
+    <p>
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+    <ul>
+      <li><button class="btn" onclick="rate(this)" 
+        onmouseover="show1()" onmouseout="show1()">1</button></li>
+
+      <li><button class="btn" onclick="rate(this)"
+        onmouseover="show2()" onmouseout="show2()">2</button></li>
+
+      <li><button class="btn" onclick="rate(this)"
+        onmouseover="show3()" onmouseout="show3()">3</button></li>
+
+      <li><button class="btn" onclick="rate(this)"
+        onmouseover="show4()" onmouseout="show4()">4</button></li>
+
+      <li><button class="btn" onclick="rate(this)"
+        onmouseover="show5()" onmouseout="show5()">5</button></li>
+    </ul>
+
+    <p id="one" style="display: none;">You hate us that much? :(</p>
+    <p id="two" style="display: none;">You can do more :/</p>
+    <p id="three" style="display: none;">It's okay :)</p>
+    <p id="four" style="display: none;">Never give up ;)</p>
+    <p id="five" style="display: none;">We love you too <3</p>
+
+    <button class="btn-submit" id="submit"disabled>Submit</button>
+  </div>
+  
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <div class="thank-you hide">
+    <img src="./images/illustration-thank-you.svg" alt="">
+    <p  class="select">
+      You selected
+      <span id="rating">5</span>
+      out of 5
+    </p>
+    <h2>Thank you!</h2>
+    <p>
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+    </p>
+    <button class="btn-submit" id="rate-it">rate again</button>
+  </div>
+
+
+
+  <!-- Thank you state end -->
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/NJR911">Mohamed Nejjar</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
